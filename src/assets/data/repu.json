@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "sensor",
+        "price": 1000
+    },
+    {
+        "id": 2,
+        "name": "actuador",
+        "price": 1000
+    },
+    {
+        "id": 3,
+        "name": "plc",
+        "price": 1000
+    },
+    {
+        "id": 4,
+        "name": "cables",
+        "price": 1000
+    }
+]
