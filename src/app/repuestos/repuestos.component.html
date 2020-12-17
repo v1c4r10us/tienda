@@ -4,3 +4,52 @@
     <span class="toolbar-spacer"></span>
     <mat-icon class="toolbar-icon" matBadge="8" matBadgePosition="after" matBadgeColor="accent">shopping_cart</mat-icon>
 </mat-toolbar>
+<!--SIDENAVBAR CONTAINER-->
+<mat-sidenav-container id="sidenavContainer" fullscreen>
+    <!--SINENAV-->
+    <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+        <mat-list>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>remove_red_eye</mat-icon>Sensores</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>toys</mat-icon>Servos</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>router</mat-icon>PLC</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>offline_bolt</mat-icon>Fuentes DC</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>memory</mat-icon>Microlectronica</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>bubble_chart</mat-icon>Neumatica</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button class="menu-item" mat-flat-button><mat-icon>shutter_speed</mat-icon>Hidraulica</button>
+            </mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <!--CONTENT-->
+    <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin}">
+        <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let repu of repus">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>{{repu.name}}</mat-card-title>
+                        <mat-card-subtitle>{{repu.description}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <img src="{{repu.image}}">
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>BUY</button>
+                    </mat-card-actions>
+                </mat-card>                
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

@@ -15,6 +15,7 @@ export class RepuestosComponent implements OnInit {
   title='DigitalTec';
   isMenuOpen=true;
   contentMargin=240;
+  
   onToolbarMenuToggle(){
     console.log('On toolbar toggled', this.isMenuOpen);
     this.isMenuOpen=!this.isMenuOpen;

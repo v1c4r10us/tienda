@@ -8,6 +8,7 @@ import { MaterialModule } from './material.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RepuestosComponent } from './repuestos/repuestos.component';
+import { FlexLayoutModule } from '@angular/flex-layout'
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RepuestosComponent } from './repuestos/repuestos.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

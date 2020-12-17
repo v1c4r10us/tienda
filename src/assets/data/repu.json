@@ -1,22 +1,30 @@
 [
     {
         "id": 1,
-        "name": "sensor",
+        "name": "panel",
+        "description": "es un panel",
+        "image": "../assets/images/mp177.png",
         "price": 1000
     },
     {
         "id": 2,
         "name": "actuador",
+        "description": "es un actuador",
+        "image": "foto2",
         "price": 1000
     },
     {
         "id": 3,
         "name": "plc",
+        "description": "es un plc",
+        "image": "foto3",
         "price": 1000
     },
     {
         "id": 4,
         "name": "cables",
+        "description": "es un cables",
+        "image": "foto4",
         "price": 1000
     }
 ]
